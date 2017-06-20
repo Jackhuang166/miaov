@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>
+    <title>margin padding</title>
+    <style type="text/css">
+        .ta{
+            margin: 0;
+            padding: 0;
+        }
+         /*这里是第一个盒字模型的开始*/
+        .tab{
+            width: 698px;
+            height: 598px;
+            background-color:#e56d76 ;
+            border: 1px solid #e56d76;
+        }
+        .tab-1{
+            width: 414px;
+            height: 414px;
+            border: 3px dashed #ffffff;
+            margin: 90px 140px;
+        }
+        .tab-2{
+            width: 346px;
+            height: 346px;
+            margin: 32px;
+            border: 2px solid #ffffff;
+            background-color: #ea8891;
+        }
+        .tab-3{
+            width: 276px;
+            height: 276px;
+            margin: 30px;
+            border:2px dotted #ffffff;
+            background-color:#fdad5f;
+        }
+        .tab-4{
+            width:214px;
+            height:214px;
+            margin: 30px;
+            border: 1px dotted #ffffff;
+            background-color: #faec4d;
+        }
+        .tab-5{
+            width: 198px;
+            height: 198px;
+            margin: 7px;
+            border: 1px dashed #ffffff;
+            background-color: #bfc649;
+        }
+        .tab-6{
+            width:  113px;
+            height: 113px;
+            margin: 43px 38px;
+            border: 1px solid #ffffff;
+            background-color: #e56d76;
+        }
+        /*这里是第一个盒字模型的结束*/
+
+        /*这里是第二个盒字模型的开始*/
+        .tabs{
+            width: 420px;
+            height: 420px;
+            padding:90px 140px;
+            background-color:#3c3b4b;
+
+        }
+        .tabs-1{
+            width: 350px;
+            height: 350px;
+            padding:30px;
+            border:5px solid #f38db9;
+            background-color: #3c3b4b;
+        }
+        .tabs-2{
+            height:280px;
+            width:280px;
+            padding:30px;
+            border:2px dashed #ffffff;
+            background-color:#f38db9 ;
+        }
+        .tabs-3{
+            width:216px;
+            height: 216px;
+            padding: 30px;
+            border:2px dashed #ffffff;
+            background-color: #9dc4f5;
+        }
+        .tabs-4{
+            width:198px;
+            height:198px;
+            padding:7px;
+            border:1px dashed #ffffff;
+            background-color: #b9e0fe;
+        }
+        .tabs-5{
+            width:113px;
+            height: 113px;
+            padding: 43px 39px;
+            background-color: #b7b3e5;
+
+        }
+        .tabs-6{
+            width: 113px;
+            height: 113px;
+            background-color: #bae1fd;
+        }
+    </style>
+</head>
+<body>
+        <!--大致思路：先写一个margin类型-->
+                <!--在写一个padding类型-->
+                <!--最后写一个margin，padding混合类型-->
+        <!--思考：从大盒子往小盒子写-->
+        <!--第一个盒字模型开始，使用margin-->
+     <div class="ta"></div>
+        <div class="tab">
+            <div class="tab-1">
+                <div class="tab-2">
+                    <div class="tab-3">
+                        <div class="tab-4">
+                            <div class="tab-5">
+                                <div class="tab-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--第二个盒字模型开始，使用padding。-->
+        <div class="tabs">
+            <div class="tabs-1">
+                <div class="tabs-2">
+                    <div class="tabs-3">
+                        <div class="tabs-4">
+                            <div class="tabs-5">
+                                <div class="tabs-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+</body>
+</html>
